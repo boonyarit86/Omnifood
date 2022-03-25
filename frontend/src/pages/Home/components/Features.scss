@@ -1,0 +1,26 @@
+.section-features {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-features-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: var(--font-weight--medium);
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: var(--color-accent--primary);
+}
+
+.features {
+  &__logos {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+  }
+}

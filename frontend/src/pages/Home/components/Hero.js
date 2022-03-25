@@ -36,8 +36,8 @@ function Hero() {
         </div>
         <div className="hero__img-box">
           <picture>
-            <source srcset="/images/hero.webp" type="image/webp" />
-            <source srcset="/images/hero-min.png" type="image/png" />
+            <source srcSet="/images/hero.webp" type="image/webp" />
+            <source srcSet="/images/hero-min.png" type="image/png" />
 
             <img
               src="/images/hero-min.png"
