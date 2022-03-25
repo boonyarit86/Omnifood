@@ -1,11 +1,12 @@
 import './App.scss';
 import Header from './layouts/Header';
-// import Home from './pages/Home';
+import Main from './layouts/Main';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Main />
     </div>
   );
 }
