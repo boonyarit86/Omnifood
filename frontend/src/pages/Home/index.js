@@ -1,6 +1,7 @@
 import React from "react";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
+import Meals from "./components/Meals";
 import Steps from "./components/Steps";
 import "./index.scss";
 
@@ -10,6 +11,7 @@ function Home() {
       <Hero />
       <Features />
       <Steps />
+      <Meals />
     </React.Fragment>
   );
 }
