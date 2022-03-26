@@ -1,4 +1,5 @@
 import React from "react";
+import Cta from "./components/Cta";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Meals from "./components/Meals";
@@ -16,6 +17,7 @@ function Home() {
       <Meals />
       <Testimonials />
       <Pricing />
+      <Cta />
     </React.Fragment>
   );
 }
