@@ -22,5 +22,15 @@
     height: 3.2rem;
     filter: brightness(0);
     opacity: 50%;
+
+    /* Below 944px (Tablets) */
+    @media (max-width: 59em) {
+      height: 2.4rem;
+    }
+
+    /* Below 544px (Phones tablets) */
+    @media (max-width: 34em) {
+      height: 1.2rem;
+    }
   }
 }

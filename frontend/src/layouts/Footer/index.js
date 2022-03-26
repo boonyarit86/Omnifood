@@ -28,7 +28,7 @@ function Footer() {
           </ul>
 
           <p className="copyright">
-            Copyright &copy; <span className="year">2027</span> by Omnifood, Inc.
+            Copyright &copy; <span className="year">2022</span> by Omnifood, Inc.
             All rights reserved.
           </p>
         </div>

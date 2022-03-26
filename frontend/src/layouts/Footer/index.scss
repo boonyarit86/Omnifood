@@ -7,7 +7,7 @@
     margin-bottom: 3.2rem;
 
     & img {
-        height: 2.2rem;
+      height: 2.2rem;
     }
   }
 
@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 2.4rem;
   }
-  
+
   &__link:link,
   &__link:visited {
     text-decoration: none;
@@ -31,7 +31,7 @@
     color: var(--color-accent--secondary);
     transition: all 0.3s;
   }
-  
+
   &__link:hover,
   &__link:active {
     color: var(--color-accent--light);
@@ -40,6 +40,11 @@
 
 .grid--footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+  /* Below 704px (Smaller tablets) */
+  @media (max-width: 44em) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .logo__col {
@@ -48,16 +53,16 @@
 }
 
 .social {
-    &__links {
-      list-style: none;
-      display: flex;
-      gap: 2.4rem;
-    }
-    
-    &__icon {
-      height: 2.4rem;
-      width: 2.4rem;
-    }
+  &__links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
 }
 
 .copyright {
@@ -75,4 +80,18 @@
 
 .address {
   margin-bottom: 2.4rem;
+}
+
+/* Below 704px (Smaller tablets) */
+@media (max-width: 44em) {
+  .logo__col,
+  .address__col {
+    grid-column: span 3;
+  }
+
+  .nav__col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
 }

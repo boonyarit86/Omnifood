@@ -3,55 +3,70 @@
 }
 
 .step {
-    &__number {
-      font-size: 8.6rem;
-      font-weight: var(--font-weight--semi-bold);
-      color: #ddd;
-      margin-bottom: 1.2rem;
-    }
-    
-    &__description {
-      font-size: 1.8rem;
-      line-height: 1.8;
-    }
-    
-    &__img-box {
-      position: relative;
-    
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    &__img-box::before,
-    &__img-box::after {
-      content: "";
-      display: block;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    
-    &__img-box::before {
-      width: 60%;
-      /* height: 60%; */
-      padding-bottom: 60%;
-      background-color: var(--color-primary--light);
-      z-index: -2;
-    }
-    
-    &__img-box::after {
-      width: 45%;
-      padding-bottom: 45%;
-      background-color: var(--color-primary--medium);
-      z-index: -1;
-    }
-    
-    &__img {
-      width: 35%;
-    }
+  &__number {
+    font-size: 8.6rem;
+    font-weight: var(--font-weight--semi-bold);
+    color: #ddd;
+    margin-bottom: 1.2rem;
 
+    /* Below 944px (Tablets) */
+    @media (max-width: 59em) {
+      font-size: 7.4rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  &__img-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Below 544px (Phones tablets) */
+    @media (max-width: 34em) {
+      transform: translateY(2.4rem);
+      &:nth-child(2) {
+        grid-row: 1;
+      }
+
+      &:nth-child(6) {
+        grid-row: 5;
+      }
+    }
+  }
+
+  &__img-box::before,
+  &__img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__img-box::before {
+    width: 60%;
+    /* height: 60%; */
+    padding-bottom: 60%;
+    background-color: var(--color-primary--light);
+    z-index: -2;
+  }
+
+  &__img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: var(--color-primary--medium);
+    z-index: -1;
+  }
+
+  &__img {
+    width: 35%;
+  }
 }
-

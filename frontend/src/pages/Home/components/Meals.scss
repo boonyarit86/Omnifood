@@ -46,6 +46,11 @@
 
   &__content {
     padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+
+    /* Below 944px (Tablets) */
+    @media (max-width: 59em) {
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
   }
 
   &__tags {
@@ -77,4 +82,12 @@
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
+}
+
+/* Below 704px (Smaller tablets) */
+@media (max-width: 44em) {
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
 }
